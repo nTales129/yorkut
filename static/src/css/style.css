@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #2E2E2E, #333333);
+}
+
+.container-principal {
+  max-width: 85vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 720px) {
+  .container-principal {
+    height: 140vh;
+    margin: 10vh 0;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.container-secundario {
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width: 720px) {
+  .container-secundario {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.container-imagem-registro {
+  background-color: none;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container-imagem-registro h1 {
+  font-size: 56px;
+  font-family: "Montserrat", sans-serif;
+}
+.container-imagem-registro h1 b {
+  color: #004AAD;
+}
+
+.container-formulario {
+  background-color: rgba(46, 46, 46, 0.7176470588);
+  background:linear-gradient(#2e2e2e, #2e2e2e) padding-box, linear-gradient(90deg,#004AAD, #40c9ff) border-box;
+    border: 2px solid transparent;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.container-formulario .titulo-formulario {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+.container-formulario .titulo-formulario h2 {
+  font-size: 28px;
+}
+.container-formulario .titulo-formulario span {
+  color: #7c7c7c;
+  font-size: 14px;
+}
+.container-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.container-formulario .formulario .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+.container-formulario .formulario .input-box label {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.container-formulario .formulario .input-box input {
+  background:linear-gradient(#2e2e2e, #2e2e2e) padding-box, linear-gradient(90deg,#004AAD, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #fff;
+}
+.container-formulario .formulario .input-box input:focus {
+  outline: 1px solid #5de;
+}
+.container-formulario .formulario button {
+  width: 50%;
+  font-size: 20px;
+  background: #4a8df8;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
+.container-formulario .formulario button:hover {
+  background-color: rgba(74, 141, 248, 0.631372549);
+}
+.container-formulario .formulario .label-perfil {
+  width: 100%;
+  border: 1px solid #7c7c7c;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #7c7c7c;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container-formulario .formulario .label-perfil input {
+  display: none;
+}
+.container-formulario .formulario .input-pequeno {
+  width: calc(50% - 5px);
+}
+.container-formulario .formulario .input-normal {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info a{
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.info a:hover{
+  color: #004AAD;
+  transition: all ease-in 0.5s;
+}
+
+footer {
+  position: absolute;
+  bottom:0;
+  display: flex;
+  width: 40%;
+  color: #fff;
+  padding: 20px;
+  justify-content:space-evenly;
+  
+}
+
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover{
+   color: #004AAD;
+  transition: all ease-in 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

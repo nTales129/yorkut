@@ -1,0 +1,55 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="container-principal">
+        <div class="container-secundario container-imagem-registro">
+           <h1>Bem-Vindo ao <b>Yorkut</b></h1>
+           <p>"Conectando corações, memórias e amigos: Yorkut, onde sua rede social é o seu mundo!"</p>
+        </div>
+        <div class="container-secundario container-formulario">
+            <div class="titulo-formulario">
+                <h2>Login</h2>
+                <span>Preencha todos os campos!</span>
+            </div>
+            <form action="" class="formulario">
+                <!-- <input type="text" name="nome" id="nome" class="input-pequeno" placeholder="Nome" required>
+                <input type="text" name="sobrenome" id="sobrenome" class="input-pequeno" placeholder="Sobrenome" required> -->
+                
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="input-normal" placeholder="usuario@email.com" required>
+                </div>
+                <div class="input-box">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" class="input-normal" placeholder="suasenha123" required>
+                </div>
+
+                <!-- <input type="password" name="confirmar-senha" id="confirmar-senha" class="input-pequeno" placeholder="Confimar senha" required>
+                <label for="perfil-imagem" class="label-perfil">
+                    <span>Selecionar Foto de Perfil </span>
+                    <span class="material-symbols-outlined">
+                        manage_search
+                    </span>
+                    <input type="file" name="perfil-imagem" id="perfil-imagem" >
+                </label> -->
+                
+                <!-- <label for="termos-aceite">
+                    <input type="checkbox" id="termos-aceite" name="termos-aceite" required>
+                    Aceito os Termos e Condições
+                </label> -->
+
+                
+                <button type="submit" class="botao-cadastrar">Login</button>
+                <div class="info">
+                    <a href="#">Esqueceu sua senha ?</a>
+                    <a href="{% url 'cadastro' %}"> Não tem uma conta ?<b> Cadastre-se </b></a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Yorkut 2024</p>
+
+        <!-- <a href="./pages/sobre.html">Sobre nós</a> -->
+    </footer>
+{% endblock %}

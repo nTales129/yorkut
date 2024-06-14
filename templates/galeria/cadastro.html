@@ -1,0 +1,52 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="container">
+        <div class="container-formulario">
+            <div class="titulo-formulario">
+                <h1>Cadastre-se</h1>
+                <p>Veja o que seus amigos estão fazendo</p>
+            </div>
+            <form class="formulario">
+                <div class="inputs">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="inputs">
+                    <label for="nome-usuario">Nome de usuario</label>
+                    <input type="text" name="nome-usuario" id="nome-usuario" placeholder="Digite seu nome de usuario"
+                        required>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="inputs">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="container-genero">
+                    <span>Gênero</span>
+                    <div class="genero-inputs">
+                        <div class="radio-button">
+                            <input type="radio" name="example-radio" value="option1" id="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+
+                        <div class="radio-button">
+                            <input type="radio" name="example-radio" value="option2" id="feminino" class="radio">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+                    <button>Cadastre-se</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Yorkut 2024</p>
+        <a href="./pages/sobre.html">Sobre nós</a>
+    </footer>
+{% endblock %}
