@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="{% static './src/css/style.css'%}">
+    <link rel="icon" href="{% static '../Yourkut/logo/Y-corrigida-removebg-preview.png' %}" type="image/x-icon">
+    <title>Bem-Vindo ao Yorkut</title>
+</head>
+<body>
+    <main class="container-principal">
+        <div class="container-secundario container-imagem-registro">
+           <h1>Bem-Vindo ao <b>Yorkut</b></h1>
+           <p>"Conectando corações, memórias e amigos: Yorkut, onde sua rede social é o seu mundo!"</p>
+        </div>
+        <div class="container-secundario container-formulario">
+            <div class="titulo-formulario">
+                <h2>LOGIN</h2>
+                <span>Preencha todos os campos!</span>
+            </div>
+            <form action="" class="">
+                {% csrf_token %}
+                <div>
+                {% for field in form.visible_fields %}
+                    <div>
+                        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                        {{ field }}  </div>
+                 {% endfor %}
+                    <button type="submit">Logar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Yorkut 2024</p>
+
+        <!-- <a href="./pages/sobre.html">Sobre nós</a> -->
+    </footer>
+</body>
+</html>

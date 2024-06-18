@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="{% static './src/css/cadastro.css'%}">
+    <link rel="icon" href="{% static '../Yourkut/logo/Y-corrigida-removebg-preview.png' %}" type="image/x-icon">
+    <title>Bem-Vindo ao Yorkut</title>
+</head>
+<body>
+    <main class="container">
+        <div class="container-formulario">
+            <div class="titulo-formulario">
+                <h1>CADASTRE-SE</h1>
+                <p>Veja o que seus amigos estão fazendo</p>
+            </div>
+            <form class="formulario">
+                <div class="inputs">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Ex: Digite seu nome" required>
+                </div>
+                <div class="inputs">
+                    <label for="nome-usuario">Nome de usuario</label>
+                    <input type="text" name="nome-usuario" class="form-control" id="nome-usuario" placeholder="Ex: Digite seu nome de usuario"
+                        required>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Ex: example@gmail.com" required>
+                </div>
+                <div class="inputs">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" class="form-control" id="senha" placeholder="Ex: Digite sua senha" required>
+                </div>
+
+                <div class="container-genero">
+                    <span></span>
+                    <div class="genero-inputs">
+                        <div class="radio-button"> 
+                        </div>
+                    </div>
+                </div>
+                    <button href="{% url 'login' %}">Cadastre-se</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Yorkut 2024</p>
+        <a href="./pages/sobre.html">Sobre nós</a>
+    </footer>
+</body>
+</html>

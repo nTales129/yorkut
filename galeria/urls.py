@@ -3,5 +3,5 @@ from galeria.views import index, cadastro
 
 urlpatterns = [
     path('', index),
-    path('cadastro/', cadastro, name='cadastro')
+    path('card/', cadastro, name='card')
 ]

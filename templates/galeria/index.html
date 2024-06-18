@@ -8,7 +8,7 @@
         </div>
         <div class="container-secundario container-formulario">
             <div class="titulo-formulario">
-                <h2>Login</h2>
+                <h2>Inicio</h2>
                 <span>Preencha todos os campos!</span>
             </div>
             <form action="" class="formulario">
@@ -39,10 +39,10 @@
                 </label> -->
 
                 
-                <button type="submit" class="botao-cadastrar">Login</button>
+                <button type="submit" class="botao-cadastrar" href="{% url 'login' %}">Login</button>
                 <div class="info">
                     <a href="#">Esqueceu sua senha ?</a>
-                    <a href="{% url 'cadastro' %}"> Não tem uma conta ?<b> Cadastre-se </b></a>
+                    <a href="{% url 'card' %}"> Não tem uma conta ?<b> Cadastre-se </b></a>
                 </div>
             </form>
         </div>

@@ -5,7 +5,7 @@ def  index(request):
     return render(request, 'galeria/index.html')
 
 def cadastro(request):
-    return render(request, 'galeria/cadastro.html')
+    return render(request, 'galeria/card.html')
     
 
 # Create your views here.
